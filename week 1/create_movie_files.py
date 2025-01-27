@@ -11,8 +11,6 @@ import os
 import shutil
 
 
-
-
 # Define the directory for messy files
 directory = "../messy_movie_files"
 
