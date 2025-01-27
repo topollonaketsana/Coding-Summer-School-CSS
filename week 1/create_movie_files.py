@@ -49,8 +49,3 @@ for filename in messy_files:
         file.write("")  # Create an empty file
 
 print(f"Created {len(messy_files)} messy files in {directory}!")
-
-
-
-
-

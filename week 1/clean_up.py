@@ -111,7 +111,5 @@ for filename in os.listdir(source_dir):
 
 
 
-
-
 ## call a function
 normalize_filename('star_wars!1977&Lucas')   
