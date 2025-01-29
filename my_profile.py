@@ -4,6 +4,15 @@
 import streamlit as st
 import pandas as pd
 
+
+about_page = st.Page(
+    page= '/week 1/streamlit/about.py',
+    title= 'About Me',
+    default= True
+)
+
+
+
 # Title of the app
 st.title("Researcher Profile Page")
 
@@ -23,27 +32,12 @@ st.write(f"**My Research focuses on:** {research_description}")
 # Add a section for publications
 st.header("Publications")
 #uploaded_file = st.file_uploader("Upload a CSV of Publications", type="csv")
-st.write( '1. Quantum computing',
-         '2. SpaceTime ripples',
-         '3. Machine Learning classification project'
+st.write( '1. Quantum computing\n\n',
+         '2. SpaceTime ripples\n\n',
+         '3. Machine Learning classification project\n\n'
+         
          )
 
-
-'''
-if uploaded_file:
-    publications = pd.read_csv(uploaded_file)
-    st.dataframe(publications)
-
-    # Add filtering for year or keyword
-    keyword = st.text_input("Filter by keyword", "")
-    if keyword:
-        filtered = publications[
-            publications.apply(lambda row: keyword.lower() in row.astype(str).str.lower().values, axis=1)
-        ]
-        st.write(f"Filtered Results for '{keyword}':")
-        st.dataframe(filtered)
-    else:
-        st.write("Showing all publications") '''
 
 
 # Add a section for awards
