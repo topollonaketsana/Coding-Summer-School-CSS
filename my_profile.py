@@ -78,6 +78,10 @@ st.write('University of the western cape')
 # Add a contact section
 st.header("Contact Information")
 email = "topollonaketsana60@gmail.com"
-st.write(f"You can reach {name} at {email}.")
+contact_number = '0782806610'
+website = 'https://github.com/topollonaketsana'
+st.write(f"You can reach {name} at {email}.\n\n")
+st.write(f"or you can contact me at {contact_number}.\n\n")
+st.write(f"This is my website {website}.\n\n")
 
 
