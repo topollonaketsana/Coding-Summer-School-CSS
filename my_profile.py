@@ -43,7 +43,7 @@ if uploaded_file:
         st.write(f"Filtered Results for '{keyword}':")
         st.dataframe(filtered)
     else:
-        st.write("Showing all publications") ''''''
+        st.write("Showing all publications") '''
 
 
 # Add a section for awards
