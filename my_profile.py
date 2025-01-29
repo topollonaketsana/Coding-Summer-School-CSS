@@ -48,11 +48,13 @@ st.write('2025:\nReceived a recognition award for attending CSS')
 
 
 # Add a section for 
-st.header("Awards")
+st.header("About me")
+st.write('I am Topollo Naketsana, I am currently studying my passion for the cosmos at the university of the western cape - Bsc Astrophysics..')
 
 
 # Add a section for visualizing publication trends
 st.header("Publication Trends")
+
 if uploaded_file:
     if "Year" in publications.columns:
         year_counts = publications["Year"].value_counts().sort_index()
