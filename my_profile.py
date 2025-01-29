@@ -22,8 +22,14 @@ st.write(f"**My Research focuses on:** {research_description}")
 
 # Add a section for publications
 st.header("Publications")
-uploaded_file = st.file_uploader("Upload a CSV of Publications", type="csv")
+#uploaded_file = st.file_uploader("Upload a CSV of Publications", type="csv")
+st.write( '1. Quantum computing',
+         '2. SpaceTime ripples',
+         '3. Machine Learning classification project'
+         )
 
+
+'''
 if uploaded_file:
     publications = pd.read_csv(uploaded_file)
     st.dataframe(publications)
@@ -37,7 +43,7 @@ if uploaded_file:
         st.write(f"Filtered Results for '{keyword}':")
         st.dataframe(filtered)
     else:
-        st.write("Showing all publications")
+        st.write("Showing all publications") ''''''
 
 
 # Add a section for awards
@@ -48,17 +54,11 @@ st.write('2025:\nReceived a recognition award for attending CSS')
 
 
 # Add a section for 
-st.header("Awards")
+st.header("About me")
+st.write('I am Topollo Naketsana, I am currently studying my passion for the cosmos at the university of the western cape - Bsc Astrophysics..')
 
 
-# Add a section for visualizing publication trends
-st.header("Publication Trends")
-if uploaded_file:
-    if "Year" in publications.columns:
-        year_counts = publications["Year"].value_counts().sort_index()
-        st.bar_chart(year_counts)
-    else:
-        st.write("The CSV does not have a 'Year' column to visualize trends.")
+#
 
 
 
@@ -76,6 +76,10 @@ st.write('University of the western cape')
 # Add a contact section
 st.header("Contact Information")
 email = "topollonaketsana60@gmail.com"
-st.write(f"You can reach {name} at {email}.")
+contact_number = '0782806610'
+website = 'https://github.com/topollonaketsana'
+st.write(f"You can reach {name} at {email}.\n\n")
+st.write(f"or you can contact me at {contact_number}.\n\n")
+st.write(f"This is my website {website}.\n\n")
 
 
