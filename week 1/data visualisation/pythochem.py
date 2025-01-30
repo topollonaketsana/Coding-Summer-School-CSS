@@ -30,13 +30,23 @@ print('File 4 downloaded')
 # do it as a loop
 base = 'https://phytochem.nal.usda.gov'
 
-for i in range(1, 11):
-    res = req.get(base + f'/biological-activities-chemicals-csv-export/{i}/all?page&_format=csv')
+for i in range(1, 12): 
+     
+    if os.path.exists(f'./bioact/{i}.csv'):
+        print(f'File {i} exist already')
+        pass 
+     
+    else:
+        res = req.get(base + f'/biological-activities-chemicals-csv-export/{i}/all?page&_format=csv')
+        csv = open(f'./bioact/{i}.csv', 'wb')
+        csv.write(res.content)
 
-    csv = open(f'./bioact/{i}.csv', 'wb')
-    csv.write(res.content)
+        csv.close()
 
-    csv.close()
-
-    print(f'File {i} downloaded')
+        print(f'File {i} downloaded')
     
+
+
+
+
+
