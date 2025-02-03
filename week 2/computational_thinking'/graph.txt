@@ -4,14 +4,3 @@
                        / \    | 
                       D   E - F      
 
-## This goes like this:
-
-'''
-'A' : ['B', 'C']
-'B' : ['D', 'E', 'A']
-...
-
-'''
-
-
-## Then the bfs will calculate the short path
