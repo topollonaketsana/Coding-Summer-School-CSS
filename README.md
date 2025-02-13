@@ -34,7 +34,8 @@ To work with the materials in this repository:
 3. Start exploring the notebooks and scripts inside each directory.
 
 
-
+## Contributing
+Feel free to contribute by submitting pull requests or opening issues for suggestions
 
 
 
@@ -42,4 +43,5 @@ To work with the materials in this repository:
 
 
 ## Acknowledgements
-- [Acknowledgments](#acknowledgments)
+- [National Institute for Theoretical and Computational Sciences](https://nithecs.ac.za/)
+- [Centre for High Performance Computing](https://www.chpc.ac.za/)
