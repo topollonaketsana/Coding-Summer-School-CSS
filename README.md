@@ -24,10 +24,10 @@ This repository contains materials, notes, and tutorials from the **Coding Summe
 To work with the materials in this repository:
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/coding-summer-school.git
-   cd coding-summer-school
+   https://github.com/topollonaketsana/Coding-Summer-School-CSS.git
+   cd Coding-Summer-School-CSS.git
    ```
-2. Install required dependencies (if any):
+2. Install required dependencies:
    ```sh
    pip install -r requirements.txt
    ```
